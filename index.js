@@ -10,3 +10,4 @@ console.log(satellite[0].name)
   document.body.innerHTML = example({ name: satellite[0].name });
 })
 
+console.log(data)
