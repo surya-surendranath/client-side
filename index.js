@@ -1,5 +1,6 @@
 var xhr = require('xhr')
 var example = require('./views/example.hbs')
+var whereisiss = require('./views/whereisiss.hbs')
 
 xhr.get('https://api.wheretheiss.at/v1/satellites', function(err, data) {
   if (err) console.log(err) // do something
