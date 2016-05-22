@@ -11,7 +11,7 @@ console.log(satellite[0].name)
   document.body.innerHTML = example({ name: satellite[0].name });
   console.log(data)
 
-})
+
 
 document.getElementById('button').addEventListener('click',function(){
   xhr.get('https://api.wheretheiss.at/v1/satellites/' + satellite.id, function(err, res) {
@@ -22,3 +22,4 @@ document.getElementById('paragraph').innerHTML =whereisiss(iss)
 })
 })
 
+})
