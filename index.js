@@ -14,7 +14,7 @@ console.log(satellite[0].name)
 
 
 document.getElementById('button').addEventListener('click',function(){
-  xhr.get('https://api.wheretheiss.at/v1/satellites/' + satellite.id, function(err, res) {
+  xhr.get('https://api.wheretheiss.at/v1/satellites/' + satellite[0].id, function(err, res) {
   if (err) console.log(err) // do something
 console.log("hello", (err) ? err:res)
 var iss =JSON.Parse(res.body)
