@@ -17,7 +17,7 @@ document.getElementById('button').addEventListener('click',function(){
   if (err) console.log(err) // do something
 console.log("hello", (err) ? err:res)
 var iss =JSON.Parse(res.body)
-document.getElementById('paragraph').innerHTML =wheretheiss(iss)
+document.getElementById('paragraph').innerHTML =whereisiss(iss)
 })
 })
 
