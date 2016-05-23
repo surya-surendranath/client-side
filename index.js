@@ -21,3 +21,10 @@ xhr.get('https://api.wheretheiss.at/v1/satellites', function(err, data) {
   })
 
 })
+
+xhr.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&type=restaurant&name=cruise&key=AIzaSyADrKamh9JljunD_hq_FsCAYxYmuohKN70', function(err, data) {
+
+  if (err) console.log(err)
+    document.body.innerHTML = example({ google: data });
+    console.log(data)
+  })
