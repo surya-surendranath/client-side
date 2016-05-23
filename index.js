@@ -2,7 +2,7 @@ var xhr = require('xhr')
 var example = require('./views/example.hbs')
 var whereisiss = require('./views/whereisiss.hbs')
 
-xhr.get('https://api.wheretheiss.at/v1/satellites', function(err, data) {
+xhr.get('http://localhost:3000/v1/games', function(err, data) {
   if (err) console.log(err)
 
     var satellite = JSON.parse(data.body.replace('/[|]/g',''))
@@ -22,9 +22,9 @@ xhr.get('https://api.wheretheiss.at/v1/satellites', function(err, data) {
 
 })
 
-xhr.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&type=restaurant&name=cruise&key=AIzaSyADrKamh9JljunD_hq_FsCAYxYmuohKN70', function(err, data) {
+// xhr.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&type=restaurant&name=cruise&key=AIzaSyADrKamh9JljunD_hq_FsCAYxYmuohKN70', function(err, data) {
 
-  if (err) console.log(err)
-    document.body.innerHTML = example({ google: data });
-    console.log(data)
-  })
+//   if (err) console.log(err)
+//     document.body.innerHTML = example({ google: data });
+//     console.log(data)
+//   })
